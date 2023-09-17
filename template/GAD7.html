@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+  <link rel="stylesheet" href="/static/css/ff.css">
+</head>
+<style>
+  body{
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% ;
+}
+</style>
+<body background="/static/images/GAD-7 (1).png">
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br><br><br><br><br><br>
+
+  
+	<form action="{{url_for('predict')}}" method="post" id="input head">
+    <br>
+    <h1>Questionnaire Form</h1>
+  <br>  
+    <p style="text-align:center;font-size:160%;">Fill in the following details and answer the questions as you have done or felt over last 2 weeks.</p>
+    <br>
+      
+            
+        <div class="item">
+            <h3>You like to be called?  </h3>
+            <input type="text" name="name" placeholder="Enter a name to identify you" />
+          </div>
+          <div class="item">
+            <h3>Age  </h3>
+            <input type="number" name="age" placeholder="Enter age"/>
+          </div>
+          <div class="item">
+            <h3>Gender  </h3>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="item">
+            <h3>Hours  </h3>
+            <input type="number" name="hour" placeholder="Enter No. of hours spent playing game"/>
+          </div>
+          <div class="item">
+            <h3>Streaming Hours  </h3>
+            <input type="number" name="stream" placeholder="Enter No. of hours spent watching streaming"/>
+          </div>
+
+          
+
+
+<br><br>
+            
+<div>
+    <h2>Generalised Anxiety Disorder Questionnaire</h2>
+    <table>
+      <tr>
+        <th class="first-col"></th>
+        <th> Nearly every day</th>
+        <th>More than half the days</th>
+        <th>Several days</th>
+        <th>Not at all</th>
+        
+      </tr>
+      <tr>
+        <td class="first-col">1. Feeling nervous, anxious or on edge?</td>
+        <td><input type="radio" value='3' name="GAD1" /></td>
+        <td><input type="radio" value='2' name="GAD1" /></td>
+        <td><input type="radio" value='1' name="GAD1" /></td>
+        <td><input type="radio" value='0' name="GAD1" /></td>
+        
+      </tr>
+      <tr>
+        <td class="first-col">2. Not being able to stop or control worrying?</td>
+        <td><input type="radio" value='3' name="GAD2" /></td>
+        <td><input type="radio" value='2' name="GAD2" /></td>
+        <td><input type="radio" value='1' name="GAD2" /></td>
+        <td><input type="radio" value='0' name="GAD2" /></td>
+        
+      </tr>
+      <tr>
+        <td class="first-col">3. Worrying too much about different things?</td>
+        <td><input type="radio" value='3' name="GAD3" /></td>
+        <td><input type="radio" value='2' name="GAD3" /></td>
+        <td><input type="radio" value='1' name="GAD3" /></td>
+        <td><input type="radio" value='0' name="GAD3" /></td>
+        
+      </tr>
+      <tr>
+        <td class="first-col">4. Trouble relaxing?</td>
+        <td><input type="radio" value='3' name="GAD4" /></td>
+        <td><input type="radio" value='2' name="GAD4" /></td>
+        <td><input type="radio" value='1' name="GAD4" /></td>
+        <td><input type="radio" value='0' name="GAD4" /></td>
+        
+      </tr>
+      <tr>
+        <td class="first-col">5. Being so restless that it is hard to sit still?</td>
+        <td><input type="radio" value='3' name="GAD5" /></td>
+        <td><input type="radio" value='2' name="GAD5" /></td>
+        <td><input type="radio" value='1' name="GAD5" /></td>
+        <td><input type="radio" value='0' name="GAD5" /></td>
+      
+      </tr>
+      <tr>
+        <td class="first-col">6. Becoming easily annoyed or irritable?</td>
+        <td><input type="radio" value='3' name="GAD6" /></td>
+        <td><input type="radio" value='2' name="GAD6" /></td>
+        <td><input type="radio" value='1' name="GAD6" /></td>
+        <td><input type="radio" value='0' name="GAD6" /></td>
+       
+      </tr>
+      <tr>
+        <td class="first-col">7. Feeling afraid as if something awful might happen?</td>
+        <td><input type="radio" value='3' name="GAD7" /></td>
+        <td><input type="radio" value='2' name="GAD7" /></td>
+        <td><input type="radio" value='1' name="GAD7" /></td>
+        <td><input type="radio" value='0' name="GAD7" /></td>
+       
+      </tr>
+      
+    </table>
+  </div>
+  <br><br>
+  <div>
+    <h2>Satisfaction With Life Scale Questionnaire</h2>
+    <table>
+      <tr>
+        <th class="first-col"></th>
+        <th>Strongly Disagree</th>
+        <th>Disagree</th>
+        <th> Slightly disagree</th>
+        <th>Neither agree nor disagree</th>
+        <th>Slightly agree</th>
+        <th>Agree</th>
+        <th>Strongly Agree</th>
+      </tr>
+      <tr>
+        <td class="first-col">1. In most ways my life is close to my ideal.</td>
+        <td><input type="radio" value='1' name="SWL1" /></td>
+        <td><input type="radio" value='2' name="SWL1" /></td>
+        <td><input type="radio" value='3' name="SWL1" /></td>
+        <td><input type="radio" value='4' name="SWL1" /></td>
+        <td><input type="radio" value='5' name="SWL1" /></td>
+        <td><input type="radio" value='6' name="SWL1" /></td>
+        <td><input type="radio" value='7' name="SWL1" /></td>
+      </tr>
+      <tr>
+        <td class="first-col">2. The conditions of my life are excellent. </td>
+        <td><input type="radio" value='1' name="SWL2" /></td>
+        <td><input type="radio" value='2' name="SWL2" /></td>
+        <td><input type="radio" value='3' name="SWL2" /></td>
+        <td><input type="radio" value='4' name="SWL2" /></td>
+        <td><input type="radio" value='5' name="SWL2" /></td>
+        <td><input type="radio" value='6' name="SWL2" /></td>
+        <td><input type="radio" value='7' name="SWL2" /></td>
+      </tr>
+      <tr>
+        <td class="first-col">3. I am satisfied with my life. </td>
+        <td><input type="radio" value='1' name="SWL3" /></td>
+        <td><input type="radio" value='2' name="SWL3" /></td>
+        <td><input type="radio" value='3' name="SWL3" /></td>
+        <td><input type="radio" value='4' name="SWL3" /></td>
+        <td><input type="radio" value='5' name="SWL3" /></td>
+        <td><input type="radio" value='6' name="SWL3" /></td>
+        <td><input type="radio" value='7' name="SWL3" /></td>
+      </tr>
+      <tr>
+        <td class="first-col">4. So far I have gotten the important things I want in life. </td>
+        <td><input type="radio" value='1' name="SWL4" /></td>
+        <td><input type="radio" value='2' name="SWL4" /></td>
+        <td><input type="radio" value='3' name="SWL4" /></td>
+        <td><input type="radio" value='4' name="SWL4" /></td>
+        <td><input type="radio" value='5' name="SWL4" /></td>
+        <td><input type="radio" value='6' name="SWL4" /></td>
+        <td><input type="radio" value='7' name="SWL4" /></td>
+      </tr>
+      <tr>
+        <td class="first-col">5. If I could live my life over, I would change almost nothing.  </td>
+        <td><input type="radio" value='1' name="SWL5" /></td>
+        <td><input type="radio" value='2' name="SWL5" /></td>
+        <td><input type="radio" value='3' name="SWL5" /></td>
+        <td><input type="radio" value='4' name="SWL5" /></td>
+        <td><input type="radio" value='5' name="SWL5" /></td>
+        <td><input type="radio" value='6' name="SWL5" /></td>
+        <td><input type="radio" value='7' name="SWL5" /></td>
+      </tr>
+    </table>
+    <br><br>
+  </div>
+            <button id="submit" type="submit">Submit</button>
+            
+        </form>
+        
+        
+        <br><br><br>
+</body>
+<script>
+  const selectedRadioButton = document.querySelector('input[name="GAD1"]:checked');
+  if (selectedRadioButton !== null) {
+    console.log(selectedRadioButton.value);
+  } else {
+    console.log("No radio button is selected.");
+  }
+</script>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Online Gamer Prediction</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/ee.css">
+<link rel="stylesheet" href="/static/css/w3.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align ">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-12px 24px w3-green w3-hover-green w3-large " href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-12px 24px w3-green w3-hover-light-green w3-text-black">Home</a>
+   <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>-->
+  </div>
+</div>
+  <!-- Navbar on small screens 
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>-->
+
+<!-- Header -->
+
+<div class="container">
+  <img src="/static/images/WELLNESS IS A STATE OF BEING.png" width=100% height="600">
+  <!--button class="btn"><a href="/templates/GAD7.html">START QUIZ</a></button-->
+  <button class="btn" onclick="mf()"> START QUIZ</button>
+  <script>
+    function mf(){
+      window.location.href="{{url_for('gad')}}";
+    }
+  </script>
+</div>
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-32 w3-container">
+    
+  <div class="w3-content">
+   
+  
+   
+      <h1>Why Mental Health is Important for Gamers?</h1>
+      <h5 class="w3-padding-32">Social Isolation is very common among today’s population. This can bring in the “loneliness”. Gaming often helps people bring in a sense of togetherness. Sharing game with other players help relax. Gaming is often taken as a way to cope with stress and a means of distraction. But most of the time gamers might not realise the longer they play longer this makes the opposite impact. Uncontrolled gaming can cause addiction. This can lead to higher anxiety levels and low satisfaction with life. It is crucial for gamers to understand when to refrain from constant gaming.
+
+      </h5>
+
+      <p class="w3-text-grey">
+        
+        We provide you a means to get to know how gaming has affected your mental health. By taking the quiz, you will get to know your anxiety level and how much your satisfied with your life. Let this Physch level Predictor be an eyeopener for you. 
+        </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+
+
+<!-- Second Grid -->
+
+<!--<div class="w3-main w3-content w3-padding-32 w3-light-grey" style="max-width:1200px;margin-top:100px"-->
+
+ 
+
+  
+
+<div class="w3-row-padding w3-center w3-margin-top ">
+<div class="w3-third">
+  <div class="w3-card w3-container w3-red" style="min-height:400px">
+  <h2>What is Mental Health or Wellbeing?</h2><br>
+  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+
+  <p>Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn well and work well, and contribute to their community. It is an integral component of health and well-being that underpins our individual and collective abilities to make decisions, build relationships and shape the world we live in. Mental health is a basic human right. And it is crucial to personal, community and socio-economic development.</p>
+  
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:400px">
+  <h2>What is Anxiety?</h2><br>
+  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Intense, excessive and persistent worry and fear about everyday situations. It results in fast heart rate, rapid breathing, sweating and feeling tired.
+    Signs and Symptoms of Anxiety include:<br>
+    	Feeling nervous, restless or tense
+    	Having a sense of impending danger, panic or doom
+    Having an increased heart rate,
+    	Breathing rapidly (hyperventilation),
+    Sweating,
+    Trembling etc.
+    </p>
+
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container w3-blue" style="min-height:400px">
+  <h2>What is satisfaction with Life?</h2><br>
+  <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>According to Ruut Veenhoven:<br><i>"Life satisfaction is the degree to which a person positively evaluates the overall quality of his/her life as a whole."</i><br> In other words, how much the person likes the life he/she leads.”
+    High life satisfaction helps appreciate not only one’s achievements but also small things in life. This indeed improves productivity , coping with stress easier and brings in happiness.
+    </p>
+ 
+  </div>
+</div>
+</div>
+<br>
+<br>
+
+
+
+<div class="w3-container w3-green w3-center w3-opacity w3-padding-32">
+  <h1 class="w3-margin w3-xlarge w3-text-black">Quote of the Day: Success is not final, failure is not fatal, It is the courage to continue that counts.</h1>
+</div>
+
+<!-- Footer -->
+ 
+  
+   
+<script>
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+
+</body>
+</html>
